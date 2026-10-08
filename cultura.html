@@ -4,61 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultura - Verdad al día</title>
-    <link rel="shortcut icon" href="images/svgs/logo url.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>📰 Verdad al día</h1>
-        <p>Cultura</p>
+    <div class="top-bar">
+        <span class="fecha">Edición Global – Vol. 42</span>
+        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <a href="#" class="btn-suscribete">Suscríbete</a>
+    </div>
+
+    <header class="header">
+        <h1 class="logo">Verdad al día</h1>
+        <p class="slogan">Periodismo Independiente · Desde 1998</p>
     </header>
 
-    <nav>
+    <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="politica.html">Política</a></li>
             <li><a href="tecnologia.html">Tecnología</a></li>
             <li><a href="economia.html">Economía</a></li>
-            <li><a href="cultura.html">Cultura</a></li>
+            <li><a href="cultura.html" class="activo">Cultura</a></li>
             <li><a href="opinion.html">Opinión</a></li>
         </ul>
     </nav>
 
-    <hr>
+    <div class="container">
 
-    <main>
-        <h2>SECCIÓN CULTURA</h2>
+        <div class="page-header">
+            <h1>Cultura</h1>
+            <p>Arte, historia y patrimonio</p>
+        </div>
 
-        <article id="surrealismo-prado">
-            <h3>Retrospectiva: Los 100 años del surrealismo en el Museo del Prado</h3>
-            <p><strong>Sofía Ramírez</strong> – Corresponsal en Madrid</p>
+        <article class="articulo">
+            <h2>Retrospectiva: Los 100 años del surrealismo en el Museo del Prado</h2>
+            <p class="meta"><strong>Sofía Ramírez</strong> · Corresponsal en Madrid · 24 Mayo 2026</p>
             <p>El Museo del Prado inaugura la exposición más completa sobre el surrealismo, con más de 300 obras de Dalí, Miró, Magritte y otros grandes maestros del movimiento. La muestra incluye 50 piezas nunca antes vistas en España.</p>
-            <p>Fecha: 24 de mayo, 2026</p>
+            <p>La exposición estará abierta al público hasta el 15 de septiembre y se espera que reciba más de 500,000 visitantes.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>El director Pedro Almodóvar gana la Palma de Oro en Cannes</h3>
-            <p><strong>Elena Sánchez</strong> – Corresponsal en Cannes</p>
+        <article class="articulo">
+            <h2>El director Pedro Almodóvar gana la Palma de Oro en Cannes</h2>
+            <p class="meta"><strong>Elena Sánchez</strong> · Corresponsal en Cannes · 22 Mayo 2026</p>
             <p>El cineasta español Pedro Almodóvar ha ganado la Palma de Oro del Festival de Cannes 2026 por su película "El último verano", un drama intimista sobre el paso del tiempo y la memoria.</p>
-            <p>Fecha: 22 de mayo, 2026</p>
+            <p>Es la segunda vez que Almodóvar recibe este prestigioso galardón, consolidando su lugar como uno de los directores más importantes del cine contemporáneo.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Nuevo descubrimiento arqueológico en Machu Picchu</h3>
-            <p><strong>Jorge Herrera</strong> – Corresponsal en Cusco</p>
+        <article class="articulo">
+            <h2>Nuevo descubrimiento arqueológico en Machu Picchu</h2>
+            <p class="meta"><strong>Jorge Herrera</strong> · Corresponsal en Cusco · 19 Mayo 2026</p>
             <p>Un equipo de arqueólogos ha descubierto una nueva estructura ceremonial en Machu Picchu. Se cree que data del siglo XV y podría ser un observatorio astronómico inca. El hallazgo ya está siendo estudiado por la UNESCO.</p>
-            <p>Fecha: 19 de mayo, 2026</p>
+            <p>El descubrimiento podría arrojar nueva luz sobre los conocimientos astronómicos de la civilización inca.</p>
         </article>
-    </main>
 
-    <hr>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
+        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +34 900 123 456</p>
         <p><a href="index.html">Volver al inicio</a></p>
     </footer>
 

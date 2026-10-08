@@ -4,61 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnología - Verdad al día</title>
-    <link rel="shortcut icon" href="images/svgs/logo url.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>📰 Verdad al día</h1>
-        <p>Tecnología</p>
+    <div class="top-bar">
+        <span class="fecha">Edición Global – Vol. 42</span>
+        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <a href="#" class="btn-suscribete">Suscríbete</a>
+    </div>
+
+    <header class="header">
+        <h1 class="logo">Verdad al día</h1>
+        <p class="slogan">Periodismo Independiente · Desde 1998</p>
     </header>
 
-    <nav>
+    <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="politica.html">Política</a></li>
-            <li><a href="tecnologia.html">Tecnología</a></li>
+            <li><a href="tecnologia.html" class="activo">Tecnología</a></li>
             <li><a href="economia.html">Economía</a></li>
             <li><a href="cultura.html">Cultura</a></li>
             <li><a href="opinion.html">Opinión</a></li>
         </ul>
     </nav>
 
-    <hr>
+    <div class="container">
 
-    <main>
-        <h2>SECCIÓN TECNOLOGÍA</h2>
+        <div class="page-header">
+            <h1>Tecnología</h1>
+            <p>Innovación, ciencia y futuro digital</p>
+        </div>
 
-        <article id="ia-generativa">
-            <h3>IA Generativa: El nuevo motor de la productividad industrial según el FMI</h3>
-            <p><strong>Ana Martínez</strong> – Corresponsal en Silicon Valley</p>
+        <article class="articulo">
+            <h2>IA Generativa: El nuevo motor de la productividad industrial según el FMI</h2>
+            <p class="meta"><strong>Ana Martínez</strong> · Corresponsal en Silicon Valley · 24 Mayo 2026</p>
             <p>Un nuevo informe del Fondo Monetario Internacional detalla cómo la automatización impulsada por inteligencia artificial generativa está transformando el sector servicios. Se estima que el 40% de los empleos se verán afectados por la IA en los próximos 5 años, pero también se crearán nuevos roles especializados.</p>
-            <p>Fecha: 24 de mayo, 2026</p>
+            <p>El informe destaca que los países que inviertan en formación tecnológica podrán adaptarse más rápido a esta transición, mientras que aquellos que no lo hagan enfrentarán un aumento en la desigualdad laboral.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Apple presenta su nuevo chip M4 con 50% más rendimiento</h3>
-            <p><strong>Javier Torres</strong> – Corresponsal en Cupertino</p>
-            <p>Apple ha presentado su nuevo procesador M4, que promete un 50% más de rendimiento que la generación anterior. El chip está diseñado específicamente para tareas de inteligencia artificial y aprendizaje automático.</p>
-            <p>Fecha: 21 de mayo, 2026</p>
+        <article class="articulo">
+            <h2>Apple presenta su nuevo chip M4 con 50% más rendimiento</h2>
+            <p class="meta"><strong>Javier Torres</strong> · Corresponsal en Cupertino · 21 Mayo 2026</p>
+            <p>Apple ha presentado su nuevo procesador M4, que promete un 50% más de rendimiento que la generación anterior. El chip está diseñado específicamente para tareas de inteligencia artificial y aprendizaje automático, con una eficiencia energética mejorada.</p>
+            <p>Los primeros dispositivos en incorporar el M4 serán los MacBook Pro, que llegarán al mercado en el tercer trimestre del año.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>China lanza su propio sistema operativo nacional</h3>
-            <p><strong>Wei Chen</strong> – Corresponsal en Beijing</p>
+        <article class="articulo">
+            <h2>China lanza su propio sistema operativo nacional</h2>
+            <p class="meta"><strong>Wei Chen</strong> · Corresponsal en Beijing · 19 Mayo 2026</p>
             <p>El gobierno chino ha lanzado oficialmente "HarmonyOS Next", un sistema operativo completamente independiente de las tecnologías occidentales. Se espera que reemplace a Windows en las oficinas gubernamentales en los próximos 3 años.</p>
-            <p>Fecha: 19 de mayo, 2026</p>
+            <p>La medida forma parte de la estrategia de autonomía tecnológica del país asiático, que busca reducir su dependencia de proveedores extranjeros.</p>
         </article>
-    </main>
 
-    <hr>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
+        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +34 900 123 456</p>
         <p><a href="index.html">Volver al inicio</a></p>
     </footer>
 

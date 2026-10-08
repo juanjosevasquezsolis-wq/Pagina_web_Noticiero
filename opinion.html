@@ -4,61 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinión - Verdad al día</title>
-    <link rel="shortcut icon" href="images/svgs/logo url.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>📰 Verdad al día</h1>
-        <p>Opinión</p>
+    <div class="top-bar">
+        <span class="fecha">Edición Global – Vol. 42</span>
+        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <a href="#" class="btn-suscribete">Suscríbete</a>
+    </div>
+
+    <header class="header">
+        <h1 class="logo">Verdad al día</h1>
+        <p class="slogan">Periodismo Independiente · Desde 1998</p>
     </header>
 
-    <nav>
+    <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="politica.html">Política</a></li>
             <li><a href="tecnologia.html">Tecnología</a></li>
             <li><a href="economia.html">Economía</a></li>
             <li><a href="cultura.html">Cultura</a></li>
-            <li><a href="opinion.html">Opinión</a></li>
+            <li><a href="opinion.html" class="activo">Opinión</a></li>
         </ul>
     </nav>
 
-    <hr>
+    <div class="container">
 
-    <main>
-        <h2>SECCIÓN OPINIÓN</h2>
+        <div class="page-header">
+            <h1>Opinión</h1>
+            <p>Análisis y reflexiones de nuestros columnistas</p>
+        </div>
 
-        <article id="democracia-digital">
-            <h3>El futuro de la democracia digital</h3>
-            <p><strong>Doctora en Ciencias Políticas, Marta Ríos</strong></p>
+        <article class="articulo">
+            <h2>El futuro de la democracia digital</h2>
+            <p class="meta"><strong>Marta Ríos</strong> · Doctora en Ciencias Políticas · 24 Mayo 2026</p>
             <p>Especialistas debaten sobre el impacto de las redes sociales en la participación ciudadana y la desinformación electoral. La pregunta clave es: ¿las plataformas digitales fortalecen o debilitan la democracia?</p>
-            <p>Publicado: 24 de mayo, 2026</p>
+            <p>La respuesta no es simple. Por un lado, las redes permiten una participación más directa; por otro, facilitan la propagación de noticias falsas que pueden distorsionar la voluntad popular.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Educación para el siglo XXI: más que tecnología</h3>
-            <p><strong>Profesor Emérito, Antonio Gutiérrez</strong></p>
+        <article class="articulo">
+            <h2>Educación para el siglo XXI: más que tecnología</h2>
+            <p class="meta"><strong>Antonio Gutiérrez</strong> · Profesor Emérito · 23 Mayo 2026</p>
             <p>La educación debe adaptarse a los nuevos tiempos, pero también debe preservar los valores fundamentales. En este artículo, analizo el equilibrio necesario entre innovación tecnológica y formación humanística.</p>
-            <p>Publicado: 23 de mayo, 2026</p>
+            <p>No se trata de elegir entre pantallas y libros, sino de integrar ambos para formar ciudadanos críticos y preparados para los desafíos del futuro.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Cambio climático: una responsabilidad compartida</h3>
-            <p><strong>Activista ambiental, Lucía Méndez</strong></p>
+        <article class="articulo">
+            <h2>Cambio climático: una responsabilidad compartida</h2>
+            <p class="meta"><strong>Lucía Méndez</strong> · Activista ambiental · 22 Mayo 2026</p>
             <p>La protección del medio ambiente no es solo responsabilidad de los gobiernos. Cada individuo tiene un papel que desempeñar en la lucha contra el cambio climático. Aquí te ofrecemos 10 acciones que puedes tomar desde hoy.</p>
-            <p>Publicado: 22 de mayo, 2026</p>
+            <p>Desde reducir el consumo de plástico hasta optar por transporte público, pequeñas acciones suman un impacto significativo.</p>
         </article>
-    </main>
 
-    <hr>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
+        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +34 900 123 456</p>
         <p><a href="index.html">Volver al inicio</a></p>
     </footer>
 

@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política - Verdad al día</title>
-    <link rel="shortcut icon" href="images/svgs/logo url.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>📰 Verdad al día</h1>
-        <p>Política</p>
+    <div class="top-bar">
+        <span class="fecha">Edición Global – Vol. 42</span>
+        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <a href="#" class="btn-suscribete">Suscríbete</a>
+    </div>
+
+    <header class="header">
+        <h1 class="logo">Verdad al día</h1>
+        <p class="slogan">Periodismo Independiente · Desde 1998</p>
     </header>
 
-    <nav>
+    <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="politica.html">Política</a></li>
+            <li><a href="politica.html" class="activo">Política</a></li>
             <li><a href="tecnologia.html">Tecnología</a></li>
             <li><a href="economia.html">Economía</a></li>
             <li><a href="cultura.html">Cultura</a></li>
@@ -24,40 +30,37 @@
         </ul>
     </nav>
 
-    <hr>
+    <div class="container">
 
-    <main>
-        <h2>SECCIÓN POLÍTICA</h2>
+        <div class="page-header">
+            <h1>Política</h1>
+            <p>Análisis y actualidad política</p>
+        </div>
 
-        <article id="vivienda-social">
-            <h3>Gobierno anuncia nuevo plan de vivienda social</h3>
-            <p><strong>Carlos Mendoza</strong> – Corresponsal en Madrid</p>
+        <article class="articulo" id="vivienda-social">
+            <h2>Gobierno anuncia nuevo plan de vivienda social</h2>
+            <p class="meta"><strong>Carlos Mendoza</strong> · Corresponsal en Madrid · 24 Mayo 2026</p>
             <p>El Ministerio de Vivienda presentó un plan para construir 50,000 viviendas en zonas rurales, con una inversión de 1,200 millones de euros. El proyecto busca frenar la despoblación en áreas rurales y ofrecer viviendas asequibles a jóvenes y familias.</p>
-            <p>Fecha: 24 de mayo, 2026</p>
+            <p>El plan contempla incentivos fiscales para promotores que construyan en municipios de menos de 5,000 habitantes, así como líneas de crédito preferenciales para los compradores.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Debate electoral: candidatos presentan sus propuestas</h3>
-            <p><strong>Laura Fernández</strong> – Corresponsal en Barcelona</p>
+        <article class="articulo">
+            <h2>Debate electoral: candidatos presentan sus propuestas</h2>
+            <p class="meta"><strong>Laura Fernández</strong> · Corresponsal en Barcelona · 22 Mayo 2026</p>
             <p>Los principales candidatos a la presidencia participaron en el primer debate televisivo de la campaña. Los temas principales fueron la economía, la sanidad y la educación. Se espera que el segundo debate se realice en dos semanas.</p>
-            <p>Fecha: 22 de mayo, 2026</p>
+            <p>Las encuestas muestran una contienda muy reñida, con menos de tres puntos de diferencia entre los dos principales candidatos.</p>
         </article>
 
-        <hr>
-
-        <article>
-            <h3>Congreso aprueba nueva ley de transparencia</h3>
-            <p><strong>Miguel Ángel Ruiz</strong> – Corresponsal en el Congreso</p>
-            <p>El Congreso de los Diputados aprobó con 245 votos a favor la nueva Ley de Transparencia y Acceso a la Información Pública. La normativa obliga a todas las instituciones públicas a publicar sus presupuestos y contrataciones en tiempo real.</p>
-            <p>Fecha: 20 de mayo, 2026</p>
+        <article class="articulo" id="oceano">
+            <h2>Acuerdo Histórico: Cumbre Mundial Logra Pacto para la Protección del 30% de los Océanos</h2>
+            <p class="meta"><strong>Elena Marín</strong> · Corresponsal en Ginebra · 24 Mayo 2026</p>
+            <p>Tras dos décadas de negociaciones, las naciones unidas firman el tratado más ambicioso de la historia ambiental moderna. El acuerdo establece la protección de áreas marinas clave y la reducción de la contaminación plástica en un 50% para 2030.</p>
+            <p>El tratado ha sido ratificado por 120 países y entrará en vigor a partir de enero de 2027.</p>
         </article>
-    </main>
 
-    <hr>
+    </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
         <p><a href="index.html">Volver al inicio</a></p>
     </footer>

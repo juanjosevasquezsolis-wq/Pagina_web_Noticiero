@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opinión - Verdad al día</title>
+    <title>Opinión - Verdad al Día</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+    <!-- TOP BAR -->
     <div class="top-bar">
-        <span class="fecha">Edición Global – Vol. 42</span>
-        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <span class="fecha" id="fecha-hoy">Cargando fecha...</span>
         <a href="#" class="btn-suscribete">Suscríbete</a>
     </div>
 
+    <!-- HEADER -->
     <header class="header">
-        <h1 class="logo">Verdad al día</h1>
-        <p class="slogan">Periodismo Independiente · Desde 1998</p>
+        <a href="index.html" class="logo">Verdad al día</a>
+        <p class="slogan">Periodismo independiente · Desde 1998</p>
     </header>
 
+    <!-- NAVEGACIÓN -->
     <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -30,41 +32,46 @@
         </ul>
     </nav>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-
         <div class="page-header">
             <h1>Opinión</h1>
-            <p>Análisis y reflexiones de nuestros columnistas</p>
+            <p>Columnas y análisis de nuestros expertos</p>
         </div>
 
         <article class="articulo">
-            <h2>El futuro de la democracia digital</h2>
-            <p class="meta"><strong>Marta Ríos</strong> · Doctora en Ciencias Políticas · 24 Mayo 2026</p>
-            <p>Especialistas debaten sobre el impacto de las redes sociales en la participación ciudadana y la desinformación electoral. La pregunta clave es: ¿las plataformas digitales fortalecen o debilitan la democracia?</p>
-            <p>La respuesta no es simple. Por un lado, las redes permiten una participación más directa; por otro, facilitan la propagación de noticias falsas que pueden distorsionar la voluntad popular.</p>
+            <h2>El futuro de la inteligencia artificial en la educación</h2>
+            <div class="meta">
+                <strong>Dr. Alejandro Ramírez</strong> | Columnista Invitado | 24 Mayo 2026
+            </div>
+            <img src="images/noticia-opinion.jpg" alt="Noticia opinión" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--borde);">
+            
+            <p>La irrupción de herramientas como ChatGPT ha generado un debate profundo en las aulas. Mientras algunos educadores temen que los estudiantes dejen de pensar por sí mismos, otros ven una oportunidad única para personalizar el aprendizaje.</p>
+            <p>Mi postura es clara: la tecnología no debe reemplazar al docente, sino potenciarlo. El reto de la próxima década no será prohibir la IA, sino enseñar a los alumnos a formular las preguntas correctas y a validar la información que reciben.</p>
         </article>
-
-        <article class="articulo">
-            <h2>Educación para el siglo XXI: más que tecnología</h2>
-            <p class="meta"><strong>Antonio Gutiérrez</strong> · Profesor Emérito · 23 Mayo 2026</p>
-            <p>La educación debe adaptarse a los nuevos tiempos, pero también debe preservar los valores fundamentales. En este artículo, analizo el equilibrio necesario entre innovación tecnológica y formación humanística.</p>
-            <p>No se trata de elegir entre pantallas y libros, sino de integrar ambos para formar ciudadanos críticos y preparados para los desafíos del futuro.</p>
-        </article>
-
-        <article class="articulo">
-            <h2>Cambio climático: una responsabilidad compartida</h2>
-            <p class="meta"><strong>Lucía Méndez</strong> · Activista ambiental · 22 Mayo 2026</p>
-            <p>La protección del medio ambiente no es solo responsabilidad de los gobiernos. Cada individuo tiene un papel que desempeñar en la lucha contra el cambio climático. Aquí te ofrecemos 10 acciones que puedes tomar desde hoy.</p>
-            <p>Desde reducir el consumo de plástico hasta optar por transporte público, pequeñas acciones suman un impacto significativo.</p>
-        </article>
-
     </div>
 
+    <!-- MODAL DE SUSCRIPCIÓN -->
+    <div id="modalSuscripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModal">&times;</span>
+            <h2>Suscríbete a Verdad al Día</h2>
+            <p>Recibe las noticias más importantes directamente en tu correo.</p>
+            <form id="formSuscripcion">
+                <input type="text" id="nombreSusc" placeholder="Tu nombre completo" required>
+                <input type="email" id="correoSusc" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
-        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +51 900 123 456</p>
-        <p><a href="index.html">Volver al inicio</a></p>
+        <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
+        <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
     </footer>
 
+    <!-- SCRIPT JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

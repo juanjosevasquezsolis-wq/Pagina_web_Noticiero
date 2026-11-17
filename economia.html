@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Economía - Verdad al día</title>
+    <title>Economía - Verdad al Día</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+    <!-- TOP BAR -->
     <div class="top-bar">
-        <span class="fecha">Edición Global – Vol. 42</span>
-        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <span class="fecha" id="fecha-hoy">Cargando fecha...</span>
         <a href="#" class="btn-suscribete">Suscríbete</a>
     </div>
 
+    <!-- HEADER -->
     <header class="header">
-        <h1 class="logo">Verdad al día</h1>
-        <p class="slogan">Periodismo Independiente · Desde 1998</p>
+        <a href="index.html" class="logo">Verdad al día</a>
+        <p class="slogan">Periodismo independiente · Desde 1998</p>
     </header>
 
+    <!-- NAVEGACIÓN -->
     <nav class="nav-principal">
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -30,41 +32,46 @@
         </ul>
     </nav>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-
         <div class="page-header">
             <h1>Economía</h1>
-            <p>Mercados, finanzas y actualidad económica</p>
+            <p>Mercados, finanzas y negocios</p>
         </div>
 
         <article class="articulo">
-            <h2>Mercados reaccionan con optimismo ante la bajada de tipos en la eurozona</h2>
-            <p class="meta"><strong>Isabel Gómez</strong> · Corresponsal en Fráncfort · 24 Mayo 2026</p>
-            <p>Las bolsas de Londres y Madrid lideran el repunte matutino con subidas del 1.2%. El Banco Central Europeo (BCE) espera que la inflación se estabilice en el 2% para finales de año, lo que ha llevado a una reducción de los tipos de interés al 3.5%.</p>
-            <p>Los analistas coinciden en que esta medida podría impulsar el crédito y reactivar el consumo en los hogares europeos.</p>
+            <h2>El mercado bursátil cierra al alza</h2>
+            <div class="meta">
+                <strong>Roberto Gómez</strong> | Analista Financiero | 24 Mayo 2026
+            </div>
+            <img src="images/noticia-economia.jpg" alt="Noticia economía" style="width: 100%; max-height: 400px; object-fit: cover; margin-bottom: 20px; border: 1px solid var(--borde);">
+            
+            <p>Los principales índices bursátiles registraron ganancias significativas del 2% en la jornada de hoy, impulsados por los buenos resultados trimestrales de las empresas tecnológicas y energéticas.</p>
+            <p>Los inversores se muestran optimistas ante las señales de estabilización de la inflación, lo que podría llevar a los bancos centrales a moderar sus políticas de aumento de tasas de interés en los próximos meses.</p>
         </article>
-
-        <article class="articulo">
-            <h2>España crea 200,000 empleos en el primer trimestre</h2>
-            <p class="meta"><strong>Luis Díaz</strong> · Corresponsal en Madrid · 22 Mayo 2026</p>
-            <p>El mercado laboral español muestra signos de recuperación con la creación de 200,000 nuevos puestos de trabajo en el primer trimestre del año. El sector servicios y la construcción son los motores principales del crecimiento.</p>
-            <p>La tasa de desempleo se sitúa en el 10.5%, la más baja de los últimos 15 años, según datos del Instituto Nacional de Estadística.</p>
-        </article>
-
-        <article class="articulo">
-            <h2>Bitcoin supera los $80,000: ¿burbuja o nuevo ciclo alcista?</h2>
-            <p class="meta"><strong>Carlos Pérez</strong> · Corresponsal en Nueva York · 20 Mayo 2026</p>
-            <p>La criptomoneda más famosa del mundo ha superado la barrera de los $80,000 por primera vez en su historia. Los analistas debaten si se trata de una burbuja especulativa o del inicio de un nuevo ciclo alcista impulsado por la adopción institucional.</p>
-            <p>Grandes fondos de inversión han comenzado a incluir Bitcoin en sus carteras, lo que ha dado mayor legitimidad al mercado cripto.</p>
-        </article>
-
     </div>
 
+    <!-- MODAL DE SUSCRIPCIÓN -->
+    <div id="modalSuscripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModal">&times;</span>
+            <h2>Suscríbete a Verdad al Día</h2>
+            <p>Recibe las noticias más importantes directamente en tu correo.</p>
+            <form id="formSuscripcion">
+                <input type="text" id="nombreSusc" placeholder="Tu nombre completo" required>
+                <input type="email" id="correoSusc" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
-        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +51 900 123 456</p>
-        <p><a href="index.html">Volver al inicio</a></p>
+        <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
+        <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
     </footer>
 
+    <!-- SCRIPT JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

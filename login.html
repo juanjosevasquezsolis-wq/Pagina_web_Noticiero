@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Verdad al Día</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header" style="padding-bottom: 0;">
+        <a href="index.html" class="logo">Verdad al día</a>
+        <p class="slogan">Periodismo independiente · Desde 1998</p>
+    </header>
+
+    <div class="login-container">
+        <h2 style="font-family: var(--fuente-titulo); margin-bottom: 20px;">Acceso a Periodistas</h2>
+        
+        <form id="formLogin" style="display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" id="usuario" placeholder="Usuario (ej. juan)" required style="padding: 12px; border: 1px solid var(--borde);">
+            <input type="password" id="contrasena" placeholder="Contraseña (ej. 123456)" required style="padding: 12px; border: 1px solid var(--borde);">
+            
+            <button type="submit" style="padding: 12px; background-color: var(--rojo); color: white; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase;">INGRESAR</button>
+            
+            <p id="loginError" class="error-msg">Usuario o contraseña incorrectos.</p>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

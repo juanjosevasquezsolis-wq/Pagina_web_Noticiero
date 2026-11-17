@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdad al día - Periodismo Independiente</title>
+    <title>Inicio - Verdad al Día</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <!-- TOP BAR -->
     <div class="top-bar">
-        <span class="fecha">Edición Global – Vol. 42</span>
-        <span class="fecha">Viernes, 24 de Mayo, 2026</span>
+        <span class="fecha" id="fecha-hoy">Cargando fecha...</span>
         <a href="#" class="btn-suscribete">Suscríbete</a>
     </div>
 
     <!-- HEADER -->
     <header class="header">
-        <h1 class="logo">Verdad al día</h1>
-        <p class="slogan">Periodismo Independiente · Desde 1998</p>
+        <a href="index.html" class="logo">Verdad al día</a>
+        <p class="slogan">Periodismo independiente · Desde 1998</p>
     </header>
 
     <!-- NAVEGACIÓN -->
@@ -35,104 +34,110 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-
-        <!-- HERO: Noticia destacada -->
+        
+        <!-- SECCIÓN HERO (Noticia Principal) -->
         <section class="hero">
-            <div class="hero-imagen">
+            <div class="hero-imagen" style="background-image: url('images/exclusive-ocean.jpg');">
                 <span class="badge-exclusiva">Exclusiva</span>
             </div>
             <div class="hero-contenido">
-                <p class="etiqueta-seccion">Noticia del Día</p>
-                <h2 class="hero-titulo">Acuerdo Histórico: Cumbre Mundial Logra Pacto para la Protección del 30% de los Océanos</h2>
-                <p class="hero-resumen">Tras dos décadas de negociaciones, las naciones unidas firman el tratado más ambicioso de la historia ambiental moderna. El acuerdo establece la protección de áreas marinas clave y la reducción de la contaminación plástica en un 50% para 2030.</p>
+                <div class="etiqueta-seccion">Cultura</div>
+                <h2 class="hero-titulo">Misterio en el océano: hallan embarcación histórica</h2>
+                <p class="hero-resumen">Un equipo de arqueólogos submarinos ha descubierto los restos de un galeón español del siglo XVII frente a las costas de Cádiz. El hallazgo podría reescribir la historia del comercio colonial.</p>
                 <div class="hero-autor">
-                    <p class="nombre">Elena Marín</p>
-                    <p class="cargo">Corresponsal en Ginebra</p>
+                    <div class="nombre">Laura Gómez</div>
+                    <div class="cargo">Corresponsal de Cultura</div>
                 </div>
-                <a href="politica.html#oceano" class="btn-leer-mas">Leer más →</a>
+                <a href="cultura.html" class="btn-leer-mas">Leer más</a>
             </div>
         </section>
 
-        <!-- LO MÁS RECIENTE -->
-        <h2 class="seccion-titulo">Lo Más Reciente</h2>
+        <!-- SECCIÓN DE NOTICIAS (Grid de 3 Tarjetas) -->
+        <h2 class="seccion-titulo">Últimas Noticias</h2>
+        
         <div class="grid-noticias">
-
-            <article class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
-                <div class="card-contenido">
-                    <p class="card-categoria">Tecnología</p>
-                    <h3 class="card-titulo">IA Generativa: El nuevo motor de la productividad industrial según el FMI</h3>
-                    <p class="card-resumen">Un nuevo informe detalla cómo la automatización está transformando el sector servicios.</p>
-                    <p class="card-fecha">24 Mayo 2026</p>
-                </div>
-            </article>
-
-            <article class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
-                <div class="card-contenido">
-                    <p class="card-categoria">Economía</p>
-                    <h3 class="card-titulo">Mercados reaccionan con optimismo ante la bajada de tipos en la eurozona</h3>
-                    <p class="card-resumen">Las bolsas de Londres y Madrid lideran el repunte matutino con subidas del 1.2%.</p>
-                    <p class="card-fecha">24 Mayo 2026</p>
-                </div>
-            </article>
-
-            <article class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-cultura.jpg');"></div>
-                <div class="card-contenido">
-                    <p class="card-categoria">Cultura</p>
-                    <h3 class="card-titulo">Retrospectiva: Los 100 años del surrealismo en el Museo del Prado</h3>
-                    <p class="card-resumen">Una exposición única con más de 300 obras de los grandes maestros del movimiento.</p>
-                    <p class="card-fecha">23 Mayo 2026</p>
-                </div>
-            </article>
-
-        </div>
-
-        <!-- MÁS NOTICIAS -->
-        <h2 class="seccion-titulo">Más Noticias</h2>
-        <div class="grid-noticias">
-
-            <article class="card-noticia">
+            <!-- Tarjeta 1 -->
+            <a href="politica.html" class="card-noticia">
                 <div class="card-imagen" style="background-image: url('images/noticia-politica.jpg');"></div>
                 <div class="card-contenido">
-                    <p class="card-categoria">Política</p>
+                    <div class="card-categoria">Política</div>
                     <h3 class="card-titulo">Gobierno anuncia nuevo plan de vivienda social</h3>
-                    <p class="card-resumen">50,000 viviendas en zonas rurales con una inversión de 1,200 millones de euros.</p>
-                    <p class="card-fecha">22 Mayo 2026</p>
+                    <p class="card-resumen">Una inversión de 1,200 millones de euros para zonas rurales.</p>
+                    <span class="card-fecha">24 Mayo 2026</span>
                 </div>
-            </article>
+            </a>
 
-            <article class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-opinion.jpg');"></div>
+            <!-- Tarjeta 2 -->
+            <a href="tecnologia.html" class="card-noticia">
+                <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
                 <div class="card-contenido">
-                    <p class="card-categoria">Opinión</p>
-                    <h3 class="card-titulo">El futuro de la democracia digital</h3>
-                    <p class="card-resumen">Especialistas debaten sobre el impacto de las redes sociales en la participación ciudadana.</p>
-                    <p class="card-fecha">22 Mayo 2026</p>
+                    <div class="card-categoria">Tecnología</div>
+                    <h3 class="card-titulo">Apple presenta su nuevo chip cuántico</h3>
+                    <p class="card-resumen">La empresa promete revolucionar la seguridad informática global.</p>
+                    <span class="card-fecha">24 Mayo 2026</span>
                 </div>
-            </article>
+            </a>
 
-            <article class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-tecnologia-apple.jpg');"></div>
+            <!-- Tarjeta 3 -->
+            <a href="economia.html" class="card-noticia">
+                <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
                 <div class="card-contenido">
-                    <p class="card-categoria">Tecnología</p>
-                    <h3 class="card-titulo">Apple presenta su nuevo chip M4 con 50% más rendimiento</h3>
-                    <p class="card-resumen">El nuevo procesador está diseñado específicamente para tareas de inteligencia artificial.</p>
-                    <p class="card-fecha">21 Mayo 2026</p>
+                    <div class="card-categoria">Economía</div>
+                    <h3 class="card-titulo">El mercado bursátil cierra al alza</h3>
+                    <p class="card-resumen">Los índices principales registran ganancias del 2%.</p>
+                    <span class="card-fecha">24 Mayo 2026</span>
                 </div>
-            </article>
-
+            </a>
         </div>
 
     </div>
 
-    <!-- FOOTER -->
+    <!-- MODAL DE SUSCRIPCIÓN -->
+    <div id="modalSuscripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModal">&times;</span>
+            <h2>Suscríbete a Verdad al Día</h2>
+            <p>Recibe las noticias más importantes directamente en tu correo.</p>
+            <form id="formSuscripcion">
+                <input type="text" id="nombreSusc" placeholder="Tu nombre completo" required>
+                <input type="email" id="correoSusc" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER MODIFICADO CON BOTÓN DE CERRAR SESIÓN -->
     <footer class="footer">
-        <p>&copy; 2026 Verdad al día - Todos los derechos reservados</p>
-        <p>Contacto: <a href="mailto:redaccion@verdadaldia.com">redaccion@verdadaldia.com</a> | Tel: +51 900 123 456</p>
-        <p>Síguenos en redes sociales: Facebook | X | Instagram | YouTube</p>
+        <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
+        <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+        
+        <!-- Botón de Cerrar Sesión (Oculto por defecto hasta que el JS verifique si hay sesión) -->
+        <button id="btnCerrarSesion" style="display: none; margin-top: 15px; background-color: var(--gris-oscuro); color: white; border: none; padding: 6px 15px; font-size: 0.7rem; cursor: pointer; letter-spacing: 1px; text-transform: uppercase;">
+            Cerrar Sesión
+        </button>
     </footer>
 
+    <!-- SCRIPT JS PRINCIPAL -->
+    <script src="js/script.js"></script>
+
+    <!-- SCRIPT EXTRA PARA EL BOTÓN DE CERRAR SESIÓN -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btnCerrar = document.getElementById('btnCerrarSesion');
+            const userLogueado = localStorage.getItem('usuario_logueado');
+
+            // Si el usuario está logueado, mostramos el botón en el pie de página
+            if (userLogueado && btnCerrar) {
+                btnCerrar.style.display = 'inline-block';
+                
+                // Acción al hacer clic: borrar la sesión y recargar
+                btnCerrar.addEventListener('click', function() {
+                    localStorage.removeItem('usuario_logueado');
+                    alert('Has cerrado sesión correctamente.');
+                    window.location.reload();
+                });
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+/* ============================================
+   ESTILOS EXCLUSIVOS DE LA PÁGINA DE INICIO
+   ============================================ */
+
+/* ---------- NOTICIA PRINCIPAL (HERO) ---------- */
+.hero { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0; background-color: var(--blanco); border: 1px solid var(--borde); margin-bottom: 40px; }
+.hero-imagen { position: relative; min-height: 450px; background-image: url('../images/exclusive-ocean.jpg'); background-size: cover; background-position: center; }
+.badge-exclusiva { position: absolute; top: 20px; left: 20px; background-color: var(--rojo); color: var(--blanco); padding: 6px 16px; font-size: 0.7rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+.hero-contenido { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
+.etiqueta-seccion { font-size: 0.7rem; letter-spacing: 3px; color: var(--gris-medio); text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+.etiqueta-seccion::before, .etiqueta-seccion::after { content: ''; flex: 1; height: 1px; background-color: var(--borde); }
+.hero-titulo { font-family: var(--fuente-titulo); font-size: 2.2rem; line-height: 1.2; color: var(--negro); margin-bottom: 20px; font-weight: bold; }
+.hero-resumen { font-size: 0.95rem; color: var(--gris-oscuro); line-height: 1.7; margin-bottom: 25px; }
+.hero-autor { border-top: 1px solid var(--borde); padding-top: 20px; margin-bottom: 25px; }
+.hero-autor .nombre { font-weight: bold; font-size: 0.9rem; color: var(--negro); }
+.hero-autor .cargo { font-size: 0.8rem; color: var(--gris-medio); }
+.btn-leer-mas { display: inline-block; background-color: var(--rojo); color: var(--blanco); padding: 12px 28px; font-size: 0.75rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; align-self: flex-start; transition: background-color 0.3s ease; }
+.btn-leer-mas:hover { background-color: var(--rojo-oscuro); }
+
+/* ---------- SECCIÓN DE NOTICIAS (TARJETAS) ---------- */
+.seccion-titulo { font-family: var(--fuente-titulo); font-size: 1.5rem; font-weight: bold; color: var(--negro); margin: 40px 0 25px; padding-bottom: 10px; border-bottom: 2px solid var(--negro); text-transform: uppercase; letter-spacing: 1px; }
+.grid-noticias { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-bottom: 40px; }
+.card-noticia { background-color: var(--blanco); border: 1px solid var(--borde); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; display: block; }
+.card-noticia:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+.card-imagen { height: 180px; background-size: cover; background-position: center; background-color: var(--gris-claro); }
+.card-contenido { padding: 20px; }
+.card-categoria { font-size: 0.65rem; font-weight: bold; letter-spacing: 2px; color: var(--rojo); text-transform: uppercase; margin-bottom: 10px; }
+.card-titulo { font-family: var(--fuente-titulo); font-size: 1.1rem; line-height: 1.3; color: var(--negro); margin-bottom: 10px; font-weight: bold; }
+.card-resumen { font-size: 0.85rem; color: var(--gris-medio); line-height: 1.6; margin-bottom: 15px; }
+.card-fecha { font-size: 0.7rem; color: var(--gris-medio); letter-spacing: 1px; text-transform: uppercase; }
+
+/* RESPONSIVE DEL INICIO */
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .grid-noticias { grid-template-columns: 1fr; }
+}

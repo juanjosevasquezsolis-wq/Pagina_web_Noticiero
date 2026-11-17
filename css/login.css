@@ -1,0 +1,12 @@
+/* ============================================
+   ESTILOS EXCLUSIVOS DEL LOGIN
+   ============================================ */
+.login-container { 
+    max-width: 400px; 
+    margin: 80px auto; 
+    background: var(--blanco); 
+    padding: 40px; 
+    border: 1px solid var(--borde); 
+    border-top: 5px solid var(--rojo); 
+    text-align: center; 
+}

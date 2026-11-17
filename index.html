@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Verdad al Día</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -106,12 +107,12 @@
         </div>
     </div>
 
-    <!-- FOOTER MODIFICADO CON BOTÓN DE CERRAR SESIÓN -->
+    <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
         <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
         
-        <!-- Botón de Cerrar Sesión (Oculto por defecto hasta que el JS verifique si hay sesión) -->
+        <!-- Botón de Cerrar Sesión (Oculto por defecto) -->
         <button id="btnCerrarSesion" style="display: none; margin-top: 15px; background-color: var(--gris-oscuro); color: white; border: none; padding: 6px 15px; font-size: 0.7rem; cursor: pointer; letter-spacing: 1px; text-transform: uppercase;">
             Cerrar Sesión
         </button>
@@ -120,17 +121,14 @@
     <!-- SCRIPT JS PRINCIPAL -->
     <script src="js/script.js"></script>
 
-    <!-- SCRIPT EXTRA PARA EL BOTÓN DE CERRAR SESIÓN -->
+    <!-- SCRIPT EXTRA PARA CERRAR SESIÓN -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const btnCerrar = document.getElementById('btnCerrarSesion');
             const userLogueado = localStorage.getItem('usuario_logueado');
 
-            // Si el usuario está logueado, mostramos el botón en el pie de página
             if (userLogueado && btnCerrar) {
                 btnCerrar.style.display = 'inline-block';
-                
-                // Acción al hacer clic: borrar la sesión y recargar
                 btnCerrar.addEventListener('click', function() {
                     localStorage.removeItem('usuario_logueado');
                     alert('Has cerrado sesión correctamente.');

@@ -33,4 +33,155 @@
 @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; }
     .grid-noticias { grid-template-columns: 1fr; }
+} 
+/* ============================================
+   CARRUSEL DE NOTICIAS (HERO)
+   ============================================ */
+.carousel-wrapper {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 0;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    overflow: hidden;
+    display: none; /* Ocultos por defecto, el JS mostrará el activo */
+}
+
+.hero.activo {
+    display: grid; /* Solo se muestra el que tenga la clase activo */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-imagen {
+    position: relative;
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+}
+
+.badge-exclusiva {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 6px 16px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-contenido {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiqueta-seccion {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--gris-medio);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.etiqueta-seccion::before, .etiqueta-seccion::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--borde);
+}
+
+.hero-titulo {
+    font-family: var(--fuente-titulo);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: var(--negro);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-resumen {
+    font-size: 0.95rem;
+    color: var(--gris-oscuro);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero-autor {
+    border-top: 1px solid var(--borde);
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-autor .nombre {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: var(--negro);
+}
+
+.hero-autor .cargo {
+    font-size: 0.8rem;
+    color: var(--gris-medio);
+}
+
+.btn-leer-mas {
+    display: inline-block;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 12px 28px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+    background-color: var(--rojo-oscuro);
+}
+
+/* Flechas del Carrusel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: var(--rojo);
+}
+
+.btn-prev { left: 0; }
+.btn-next { right: 0; }
+
+/* Responsive del inicio */
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .grid-noticias { grid-template-columns: 1fr; }
+    .carousel-btn { top: 30%; } /* Ajuste para móviles */
 }

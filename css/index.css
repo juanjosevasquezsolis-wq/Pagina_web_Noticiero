@@ -34,3 +34,75 @@
     .hero { grid-template-columns: 1fr; }
     .grid-noticias { grid-template-columns: 1fr; }
 }
+.hero {
+    transition: opacity 0.5s ease;
+}
+.hero.hero-fade {
+    opacity: 0;
+}
+/* ---------- CONTROLES DEL HERO ---------- */
+.hero { position: relative; }
+
+.hero-flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+.hero-flecha:hover { background-color: var(--rojo); }
+.hero-prev { left: 0; }
+.hero-next { right: 0; }
+
+.hero-puntos {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+.hero-punto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-punto:hover { transform: scale(1.2); }
+.hero-punto.activo { background-color: var(--rojo); border-color: var(--rojo); }
+
+.hero-barra {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.hero-barra span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: var(--rojo);
+}
+.hero-barra span.correr {
+    animation: llenarBarra 6s linear forwards; /* mismo tiempo que TIEMPO en JS */
+}
+.hero:hover .hero-barra span { animation-play-state: paused; }
+
+@keyframes llenarBarra {
+    from { width: 0; }
+    to   { width: 100%; }
+}

@@ -35,58 +35,82 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-        
+
         <!-- SECCIÓN HERO (Noticia Principal) -->
-        <section class="hero">
-            <div class="hero-imagen" style="background-image: url('images/exclusive-ocean.jpg');">
-                <span class="badge-exclusiva">Exclusiva</span>
+        <section class="hero" id="hero">
+            <div class="hero-imagen" id="hero-imagen" style="background-image: url('images/papa-leon-xiv-llegada.jpg');">
+                <span class="badge-exclusiva" id="hero-badge">Exclusiva</span>
+
+                <button class="hero-flecha hero-prev" id="hero-prev" aria-label="Noticia anterior">&#10094;</button>
+                <button class="hero-flecha hero-next" id="hero-next" aria-label="Noticia siguiente">&#10095;</button>
+
+                <div class="hero-puntos" id="hero-puntos"></div>
             </div>
             <div class="hero-contenido">
-                <div class="etiqueta-seccion">Cultura</div>
-                <h2 class="hero-titulo">Misterio en el océano: hallan embarcación histórica</h2>
-                <p class="hero-resumen">Un equipo de arqueólogos submarinos ha descubierto los restos de un galeón español del siglo XVII frente a las costas de Cádiz. El hallazgo podría reescribir la historia del comercio colonial.</p>
+                <div class="etiqueta-seccion" id="hero-etiqueta">Cultura</div>
+                <h2 class="hero-titulo" id="hero-titulo">El papa León XIV llega a Perú, su patria adoptiva</h2>
+                <p class="hero-resumen" id="hero-resumen">El pontífice aterrizó en el Callao para iniciar su primera visita apostólica al país donde vivió más de veinte años y fue obispo de Chiclayo.</p>
                 <div class="hero-autor">
-                    <div class="nombre">Laura Gómez</div>
-                    <div class="cargo">Corresponsal de Cultura</div>
+                    <div class="nombre" id="hero-nombre">Redacción</div>
+                    <div class="cargo" id="hero-cargo">Equipo de Cultura</div>
                 </div>
-                <a href="cultura.html" class="btn-leer-mas">Leer más</a>
+                <a href="cultura.html" class="btn-leer-mas" id="hero-enlace">Leer más</a>
             </div>
+
+            <div class="hero-barra"><span id="hero-barra-progreso"></span></div>
         </section>
 
-        <!-- SECCIÓN DE NOTICIAS (Grid de 3 Tarjetas) -->
+        <!-- SECCIÓN DE NOTICIAS (Grid de 6 Tarjetas) -->
         <h2 class="seccion-titulo">Últimas Noticias</h2>
-        
+
         <div class="grid-noticias">
-            <!-- Tarjeta 1 -->
-            <a href="politica.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-politica.jpg');"></div>
+            <a href="cultura.html" class="card-noticia">
+                <div class="card-imagen" style="background-image: url('images/papa-leon-xiv-llegada.jpg');"></div>
                 <div class="card-contenido">
-                    <div class="card-categoria">Política</div>
-                    <h3 class="card-titulo">Gobierno anuncia nuevo plan de vivienda social</h3>
-                    <p class="card-resumen">Una inversión de 1,200 millones de euros para zonas rurales.</p>
-                    <span class="card-fecha">24 Mayo 2026</span>
+                    <div class="card-categoria">Cultura</div>
+                    <h3 class="card-titulo">El papa León XIV llega a Perú, su patria adoptiva</h3>
+                    <p class="card-resumen">Es la última escala de su gira por Sudamérica y el tercer papa en visitar el país.</p>
+                    <span class="card-fecha">11 Noviembre 2026</span>
                 </div>
             </a>
 
-            <!-- Tarjeta 2 -->
             <a href="tecnologia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/nvidia-huang-regresa.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Tecnología</div>
-                    <h3 class="card-titulo">Apple presenta su nuevo chip cuántico</h3>
-                    <p class="card-resumen">La empresa promete revolucionar la seguridad informática global.</p>
-                    <span class="card-fecha">24 Mayo 2026</span>
+                    <h3 class="card-titulo">Nvidia vuelve a nombrar a Jensen Huang como CEO</h3>
+                    <p class="card-resumen">Las acciones subieron con fuerza once días después de su renuncia.</p>
+                    <span class="card-fecha">23 Noviembre 2026</span>
                 </div>
             </a>
 
-            <!-- Tarjeta 3 -->
+            <a href="politica.html" class="card-noticia">
+                <div class="card-imagen" style="background-image: url('images/keiko-cade-2026.jpg');"></div>
+                <div class="card-contenido">
+                    <div class="card-categoria">Política</div>
+                    <h3 class="card-titulo">Keiko Fujimori cierra CADE Ejecutivos 2026 en Cusco</h3>
+                    <p class="card-resumen">La presidenta afirmó que el Perú puede volver a crecer por encima del 5%.</p>
+                    <span class="card-fecha">26 Noviembre 2026</span>
+                </div>
+            </a>
+
             <a href="economia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/presupuesto-2027.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Economía</div>
-                    <h3 class="card-titulo">El mercado bursátil cierra al alza</h3>
-                    <p class="card-resumen">Los índices principales registran ganancias del 2%.</p>
-                    <span class="card-fecha">24 Mayo 2026</span>
+                    <h3 class="card-titulo">Aprueban la ley de presupuesto 2027 diez días antes del plazo</h3>
+                                        <p class="card-resumen">El Gobierno destacó que se aprobó el 20 de noviembre.</p>
+                    <span class="card-fecha">26 Noviembre 2026</span>
+                </div>
+            </a>
+
+            <a href="economia.html" class="card-noticia">
+                <div class="card-imagen" style="background-image: url('images/mineros-reinfo.jpg');"></div>
+                <div class="card-contenido">
+                    <div class="card-categoria">Economía</div>
+                    <h3 class="card-titulo">Mineros artesanales marchan para exigir ampliar el Reinfo</h3>
+                    <p class="card-resumen">Convocaron una movilización nacional el 23 de noviembre.</p>
+                    <span class="card-fecha">23 Noviembre 2026</span>
                 </div>
             </a>
         </div>
@@ -111,8 +135,7 @@
     <footer class="footer">
         <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
         <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
-        
-        <!-- Botón de Cerrar Sesión (Oculto por defecto) -->
+
         <button id="btnCerrarSesion" style="display: none; margin-top: 15px; background-color: var(--gris-oscuro); color: white; border: none; padding: 6px 15px; font-size: 0.7rem; cursor: pointer; letter-spacing: 1px; text-transform: uppercase;">
             Cerrar Sesión
         </button>

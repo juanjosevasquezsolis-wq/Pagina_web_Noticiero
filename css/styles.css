@@ -74,3 +74,50 @@ img { max-width: 100%; display: block; }
 
 /* UTILIDAD */
 .oculto { display: none !important; }
+
+/* Separación entre varias noticias en una misma página */
+.articulo + .articulo {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--borde);
+}
+
+/* ---------- OPINIÓN ---------- */
+.columna-etiqueta {
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--rojo);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.columna-autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0 20px;
+}
+.columna-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.columna-autor .nombre { font-weight: bold; font-size: 0.9rem; }
+.columna-autor .cargo { font-size: 0.8rem; color: var(--gris-medio); }
+.opinion-cita {
+    border-left: 4px solid var(--rojo);
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-family: var(--fuente-titulo);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--negro);
+}

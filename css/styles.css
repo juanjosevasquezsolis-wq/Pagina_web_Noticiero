@@ -121,3 +121,46 @@ img { max-width: 100%; display: block; }
     font-style: italic;
     color: var(--negro);
 }
+
+/* ---------- NOSOTROS ---------- */
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.nosotros-card {
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-top: 4px solid var(--rojo);
+    padding: 30px;
+}
+.nosotros-card h2 {
+    font-family: var(--fuente-titulo);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.nosotros-card p { line-height: 1.7; color: var(--gris-oscuro); }
+
+.nosotros-valores { list-style: none; padding: 0; margin: 0 0 20px; }
+.nosotros-valores li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--borde);
+    line-height: 1.6;
+}
+
+.ubicacion-card {
+    display: flex;
+    gap: 20px;
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.ubicacion-icono { font-size: 2.5rem; line-height: 1; }
+.ubicacion-card h3 { font-family: var(--fuente-titulo); margin-bottom: 10px; }
+.ubicacion-card p { line-height: 1.7; margin-bottom: 8px; }
+
+@media (max-width: 900px) {
+    .nosotros-grid { grid-template-columns: 1fr; }
+}

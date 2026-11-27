@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Verdad al Día</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <span class="fecha" id="fecha-hoy">Cargando fecha...</span>
+        <a href="#" class="btn-suscribete">Suscríbete</a>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="index.html" class="logo">Verdad al día</a>
+        <p class="slogan">Periodismo independiente · Desde 1998</p>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="nav-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="politica.html">Política</a></li>
+            <li><a href="tecnologia.html">Tecnología</a></li>
+            <li><a href="economia.html">Economía</a></li>
+            <li><a href="cultura.html">Cultura</a></li>
+            <li><a href="opinion.html">Opinión</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Nosotros</h1>
+            <p>Quiénes somos y hacia dónde vamos</p>
+        </div>
+
+        <div class="nosotros-grid">
+            <section class="nosotros-card">
+                <div class="columna-etiqueta">Nuestra misión</div>
+                <h2>Informar con verdad</h2>
+                <p>Brindar a nuestros lectores información veraz, contrastada y oportuna, con independencia editorial, para que puedan tomar decisiones y formarse su propia opinión sobre lo que ocurre en el Perú y el mundo.</p>
+            </section>
+
+            <section class="nosotros-card">
+                <div class="columna-etiqueta">Nuestra visión</div>
+                <h2>Ser referente de confianza</h2>
+                <p>Ser el medio digital de referencia en el país por la calidad de nuestro periodismo, la transparencia con la que trabajamos y el compromiso con una ciudadanía mejor informada.</p>
+            </section>
+        </div>
+
+        <h2 class="seccion-titulo">Nuestros valores</h2>
+        <ul class="nosotros-valores">
+            <li><strong>Veracidad:</strong> verificamos antes de publicar.</li>
+            <li><strong>Independencia:</strong> no respondemos a intereses políticos ni económicos.</li>
+            <li><strong>Responsabilidad:</strong> corregimos nuestros errores con transparencia.</li>
+            <li><strong>Respeto:</strong> informamos con rigor y trato digno a las personas.</li>
+        </ul>
+
+                <h2 class="seccion-titulo">Ubicación</h2>
+        <div class="ubicacion-card">
+            <div class="ubicacion-info">
+                <h3>Sede principal</h3>
+                <p>Plaza Mayor de Lima, Cercado de Lima<br>Lima, Perú</p>
+                <p><strong>Horario:</strong> Lunes a viernes, 8:00 a. m. a 6:00 p. m.</p>
+                <p><strong>Teléfono:</strong> (01) 555-0198</p>
+                <p><strong>Correo:</strong> contacto@verdadaldia.example</p>
+                <a class="btn-mapa" href="https://www.google.com/maps/search/?api=1&query=Plaza+Mayor+de+Lima" target="_blank" rel="noopener">Abrir en Google Maps</a>
+            </div>
+            <div class="ubicacion-mapa">
+                <iframe
+                    src="https://www.google.com/maps?q=Plaza+Mayor+de+Lima&output=embed"
+                    width="100%" height="100%" style="border:0;"
+                    allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de la ubicación de Verdad al Día"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE SUSCRIPCIÓN -->
+    <div id="modalSuscripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" id="cerrarModal">&times;</span>
+            <h2>Suscríbete a Verdad al Día</h2>
+            <p>Recibe las noticias más importantes directamente en tu correo.</p>
+            <form id="formSuscripcion">
+                <input type="text" id="nombreSusc" placeholder="Tu nombre completo" required>
+                <input type="email" id="correoSusc" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
+        <p><a href="nosotros.html">Nosotros</a> | <a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

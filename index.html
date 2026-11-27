@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
     <!-- TOP BAR -->
     <div class="top-bar">
         <span class="fecha" id="fecha-hoy">Cargando fecha...</span>
         <a href="#" class="btn-suscribete">Suscríbete</a>
     </div>
-
     <!-- HEADER -->
     <header class="header">
         <a href="index.html" class="logo">Verdad al día</a>
         <p class="slogan">Periodismo independiente · Desde 1998</p>
     </header>
-
     <!-- NAVEGACIÓN -->
     <nav class="nav-principal">
         <ul>
@@ -30,19 +27,17 @@
             <li><a href="economia.html">Economía</a></li>
             <li><a href="cultura.html">Cultura</a></li>
             <li><a href="opinion.html">Opinión</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
     </nav>
-
     <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-<<<<<<< HEAD
         
         <!-- CARRUSEL DE NOTICIAS (HERO) -->
         <div class="carousel-wrapper">
-            <button class="carousel-btn btn-prev" id="prevBtn">&#10094;</button>
-            <button class="carousel-btn btn-next" id="nextBtn">&#10095;</button>
-
-            <!-- Slide 1: Política -->
+            <button class="carousel-btn btn-prev hero-prev">&#10094;</button>
+            <button class="carousel-btn btn-next hero-next">&#10095;</button>
+            <!-- Slide 1 -->
             <section class="hero activo">
                 <div class="hero-imagen" style="background-image: url('images/noticia-politica.jpg');">
                     <span class="badge-exclusiva">Política</span>
@@ -58,239 +53,155 @@
                     <a href="politica.html" class="btn-leer-mas">Leer más</a>
                 </div>
             </section>
-
-            <!-- Slide 2: Economía -->
+            <!-- Slide 2 -->
             <section class="hero">
-                <div class="hero-imagen" style="background-image: url('images/noticia-economia.jpg');">
-                    <span class="badge-exclusiva">Economía</span>
+                <div class="hero-imagen" style="background-image: url('images/keiko-cade-2026.jpg');">
+                    <span class="badge-exclusiva">Política</span>
                 </div>
                 <div class="hero-contenido">
-                    <div class="etiqueta-seccion">Minería</div>
-                    <h2 class="hero-titulo">Minería ilegal ya igualaría la producción de oro formal en el Perú, advierte la SNMPE</h2>
-                    <p class="hero-resumen">Gonzalo Quijandría, vicepresidente de la SNMPE, alertó que la actividad ilegal amenaza las inversiones. El gremio exige al Congreso aprobar la Ley MAPE.</p>
+                    <div class="etiqueta-seccion">Actualidad</div>
+                    <h2 class="hero-titulo">Keiko Fujimori sorprende en CADE 2026 con propuestas para la reactivación económica</h2>
+                    <p class="hero-resumen">La lideresa política presentó un plan enfocado en la inversión privada y la generación de empleo formal, generando diversas reacciones en el sector empresarial.</p>
                     <div class="hero-autor">
-                        <div class="nombre">Sección Economía</div>
+                        <div class="nombre">Sección Política</div>
                         <div class="cargo">La República</div>
                     </div>
-                    <a href="economia.html" class="btn-leer-mas">Leer más</a>
+                    <a href="politica.html" class="btn-leer-mas">Leer más</a>
                 </div>
             </section>
-
-            <!-- Slide 3: Ciencia -->
+            <!-- Slide 3 -->
             <section class="hero">
-                <div class="hero-imagen" style="background-image: url('images/noticia-tecnologia.jpg');">
-                    <span class="badge-exclusiva">Ciencia</span>
+                <div class="hero-imagen" style="background-image: url('images/nvidia-huang-regresa.jpg');">
+                    <span class="badge-exclusiva">Tecnología</span>
                 </div>
                 <div class="hero-contenido">
-                    <div class="etiqueta-seccion">Espacio</div>
-                    <h2 class="hero-titulo">China acopla con éxito la nave Shenzhou-24 a la estación espacial Tiangong</h2>
-                    <p class="hero-resumen">La tripulación realizará más de 90 experimentos, entre ellos los efectos de los vuelos espaciales sobre las semillas de quinua. Lleva a su primer astronauta extranjero.</p>
+                    <div class="etiqueta-seccion">Innovación</div>
+                    <h2 class="hero-titulo">Nvidia y su regreso triunfal: El nuevo chip que revolucionará la IA</h2>
+                    <p class="hero-resumen">La compañía tecnológica presentó su arquitectura más avanzada, prometiendo un salto cuántico en el procesamiento de inteligencia artificial para la próxima década.</p>
                     <div class="hero-autor">
-                        <div class="nombre">Ciencia y Tecnología</div>
+                        <div class="nombre">Sección Tecnología</div>
                         <div class="cargo">La República</div>
                     </div>
                     <a href="tecnologia.html" class="btn-leer-mas">Leer más</a>
                 </div>
             </section>
-
-            <!-- Slide 4: Mundo -->
+            <!-- Slide 4 -->
             <section class="hero">
-                <div class="hero-imagen" style="background-image: url('images/noticia-cultura.jpg');">
+                <div class="hero-imagen" style="background-image: url('images/papa-leon-xiv-llegada.jpg');">
                     <span class="badge-exclusiva">Mundo</span>
                 </div>
                 <div class="hero-contenido">
-                    <div class="etiqueta-seccion">Groenlandia</div>
-                    <h2 class="hero-titulo">Los sismómetros captaron una señal que se repetía cada 92 segundos durante 9 días</h2>
-                    <p class="hero-resumen">El deshielo de un glaciar provocó el derrumbe de una montaña en Groenlandia, generando una onda oscilante que sacudió los detectores sísmicos de todo el planeta.</p>
+                    <div class="etiqueta-seccion">Religión</div>
+                    <h2 class="hero-titulo">El Papa León XIV llega al Perú en una visita pastoral histórica</h2>
+                    <p class="hero-resumen">Miles de fieles recibieron al sumo pontífice en su llegada, quien trae un mensaje de esperanza y unidad para toda la región latinoamericana.</p>
                     <div class="hero-autor">
-                        <div class="nombre">Sección Ciencia</div>
+                        <div class="nombre">Sección Mundo</div>
                         <div class="cargo">La República</div>
                     </div>
                     <a href="cultura.html" class="btn-leer-mas">Leer más</a>
                 </div>
             </section>
         </div>
-
         <!-- PRIMERA SECCIÓN DE NOTICIAS -->
-=======
-
-        <!-- SECCIÓN HERO (Noticia Principal) -->
-        <section class="hero" id="hero">
-            <div class="hero-imagen" id="hero-imagen" style="background-image: url('images/papa-leon-xiv-llegada.jpg');">
-                <span class="badge-exclusiva" id="hero-badge">Exclusiva</span>
-
-                <button class="hero-flecha hero-prev" id="hero-prev" aria-label="Noticia anterior">&#10094;</button>
-                <button class="hero-flecha hero-next" id="hero-next" aria-label="Noticia siguiente">&#10095;</button>
-
-                <div class="hero-puntos" id="hero-puntos"></div>
-            </div>
-            <div class="hero-contenido">
-                <div class="etiqueta-seccion" id="hero-etiqueta">Cultura</div>
-                <h2 class="hero-titulo" id="hero-titulo">El papa León XIV llega a Perú, su patria adoptiva</h2>
-                <p class="hero-resumen" id="hero-resumen">El pontífice aterrizó en el Callao para iniciar su primera visita apostólica al país donde vivió más de veinte años y fue obispo de Chiclayo.</p>
-                <div class="hero-autor">
-                    <div class="nombre" id="hero-nombre">Redacción</div>
-                    <div class="cargo" id="hero-cargo">Equipo de Cultura</div>
-                </div>
-                <a href="cultura.html" class="btn-leer-mas" id="hero-enlace">Leer más</a>
-            </div>
-
-            <div class="hero-barra"><span id="hero-barra-progreso"></span></div>
-        </section>
-
-        <!-- SECCIÓN DE NOTICIAS (Grid de 6 Tarjetas) -->
->>>>>>> ce8823211d9d5a5afa7fb9beb515deada8dbe94e
         <h2 class="seccion-titulo">Últimas Noticias</h2>
-
+        
         <div class="grid-noticias">
-<<<<<<< HEAD
             <a href="politica.html" class="card-noticia">
                 <div class="card-imagen" style="background-image: url('images/noticia-politica.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Política</div>
                     <h3 class="card-titulo">Gobierno activa protocolos de emergencia por Fenómeno El Niño</h3>
                     <p class="card-resumen">Las autoridades anunciaron medidas preventivas en la costa peruana.</p>
-                    <span class="card-fecha">25 Nov 2026</span>
+                    <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
-
             <a href="opinion.html" class="card-noticia">
                 <div class="card-imagen" style="background-image: url('images/noticia-opinion.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Opinión</div>
                     <h3 class="card-titulo">El impacto silencioso de los alimentos ultraprocesados en el cerebro</h3>
                     <p class="card-resumen">Solo dos semanas de consumo podrían cambiar cómo responde nuestro cerebro.</p>
-                    <span class="card-fecha">25 Nov 2026</span>
-=======
-            <a href="cultura.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/papa-leon-xiv-llegada.jpg');"></div>
-                <div class="card-contenido">
-                    <div class="card-categoria">Cultura</div>
-                    <h3 class="card-titulo">El papa León XIV llega a Perú, su patria adoptiva</h3>
-                    <p class="card-resumen">Es la última escala de su gira por Sudamérica y el tercer papa en visitar el país.</p>
-                    <span class="card-fecha">11 Noviembre 2026</span>
+                    <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
-
-            <a href="tecnologia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/nvidia-huang-regresa.jpg');"></div>
-                <div class="card-contenido">
-                    <div class="card-categoria">Tecnología</div>
-                    <h3 class="card-titulo">Nvidia vuelve a nombrar a Jensen Huang como CEO</h3>
-                    <p class="card-resumen">Las acciones subieron con fuerza once días después de su renuncia.</p>
-                    <span class="card-fecha">23 Noviembre 2026</span>
-                </div>
-            </a>
-
-            <a href="politica.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/keiko-cade-2026.jpg');"></div>
-                <div class="card-contenido">
-                    <div class="card-categoria">Política</div>
-                    <h3 class="card-titulo">Keiko Fujimori cierra CADE Ejecutivos 2026 en Cusco</h3>
-                    <p class="card-resumen">La presidenta afirmó que el Perú puede volver a crecer por encima del 5%.</p>
-                    <span class="card-fecha">26 Noviembre 2026</span>
->>>>>>> ce8823211d9d5a5afa7fb9beb515deada8dbe94e
-                </div>
-            </a>
-
             <a href="economia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/presupuesto-2027.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Economía</div>
-<<<<<<< HEAD
                     <h3 class="card-titulo">Verónika Mendoza pide no firmar la adenda de Cálidda</h3>
                     <p class="card-resumen">Exige ductos y garantías para el sur del país ante las observaciones de Osinergmin.</p>
-                    <span class="card-fecha">25 Nov 2026</span>
-=======
-                    <h3 class="card-titulo">Aprueban la ley de presupuesto 2027 diez días antes del plazo</h3>
-                                        <p class="card-resumen">El Gobierno destacó que se aprobó el 20 de noviembre.</p>
-                    <span class="card-fecha">26 Noviembre 2026</span>
-                </div>
-            </a>
-
-            <a href="economia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/mineros-reinfo.jpg');"></div>
-                <div class="card-contenido">
-                    <div class="card-categoria">Economía</div>
-                    <h3 class="card-titulo">Mineros artesanales marchan para exigir ampliar el Reinfo</h3>
-                    <p class="card-resumen">Convocaron una movilización nacional el 23 de noviembre.</p>
-                    <span class="card-fecha">23 Noviembre 2026</span>
->>>>>>> ce8823211d9d5a5afa7fb9beb515deada8dbe94e
+                    <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
         </div>
-
         <!-- SEGUNDA SECCIÓN DE NOTICIAS -->
         <h2 class="seccion-titulo" style="margin-top: 10px;">Más Noticias</h2>
         
         <div class="grid-noticias">
             <a href="economia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/presupuesto-2027.jpg');"></div>
                 <div class="card-contenido">
                     <div class="card-categoria">Economía</div>
-                    <h3 class="card-titulo">BCRP lanza nueva moneda de plata de S/1 por los 300 años de convento en Junín</h3>
-                    <p class="card-resumen">Esta moneda, de emisión limitada a 5.000 unidades, rinde homenaje a la fundación del convento en 1725.</p>
+                    <h3 class="card-titulo">Gobierno presenta el Presupuesto Público 2027 con fuerte enfoque en infraestructura</h3>
+                    <p class="card-resumen">Se priorizarán sectores clave como educación, salud y la reactivación de obras públicas.</p>
                     <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
-
             <a href="cultura.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-cultura.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/estatua-leon-xiv.jpg');"></div>
                 <div class="card-contenido">
-                    <div class="card-categoria">Sociedad</div>
-                    <h3 class="card-titulo">“Lo lograste”: Gael, el niño de 10 años que venció el cáncer y emociona a miles</h3>
-                    <p class="card-resumen">Pequeño culminó su tratamiento contra un linfoma de Hodgkin y celebró junto a sus padres y médicos.</p>
+                    <div class="card-categoria">Cultura</div>
+                    <h3 class="card-titulo">Restauran histórica estatua de León XIV en el centro de la ciudad</h3>
+                    <p class="card-resumen">Especialistas trabajaron durante meses para devolverle su esplendor a la pieza.</p>
                     <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
-
             <a href="tecnologia.html" class="card-noticia">
-                <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
+                <div class="card-imagen" style="background-image: url('images/gas-natural-regiones.jpg');"></div>
                 <div class="card-contenido">
-                    <div class="card-categoria">Ciencia</div>
-                    <h3 class="card-titulo">Hallan una estrella que gira 261 veces por segundo y revela una nueva forma de explorar el universo</h3>
-                    <p class="card-resumen">Este hallazgo promete agilizar la detección de sistemas binarios en rayos gamma.</p>
+                    <div class="card-categoria">Tecnología</div>
+                    <h3 class="card-titulo">Nuevos proyectos de masificación de gas natural en las regiones del sur</h3>
+                    <p class="card-resumen">El gobierno busca ampliar la cobertura energética para miles de familias.</p>
                     <span class="card-fecha">26 Nov 2026</span>
                 </div>
             </a>
         </div>
-
         <!-- CONTENEDOR OCULTO CON 6 NOTICIAS MÁS -->
         <div id="noticias-ocultas" style="display: none; margin-top: 30px;">
             <div class="grid-noticias">
                 <a href="economia.html" class="card-noticia">
-                    <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
+                    <div class="card-imagen" style="background-image: url('images/mineros-reinfo.jpg');"></div>
                     <div class="card-contenido">
                         <div class="card-categoria">Economía</div>
                         <h3 class="card-titulo">Elmer Cuba anuncia nueva ley de inversión pública: “Se nos fue la mano” con las obras paralizadas</h3>
-                        <p class="card-resumen">El ministro de Economía cuestionó la falta de controles sobre los proyectos ejecutados por los gobiernos regionales.</p>
-                        <span class="card-fecha">26 Nov 2026</span>
-                    </div>
-                </a>
-                <a href="economia.html" class="card-noticia">
-                    <div class="card-imagen" style="background-image: url('images/noticia-economia.jpg');"></div>
-                    <div class="card-contenido">
-                        <div class="card-categoria">Economía</div>
-                        <h3 class="card-titulo">Presidente de la CCL cuestiona vacaciones, gratificaciones y CTS: “Somos el único país en el mundo”</h3>
-                        <p class="card-resumen">Raúl Barrios cuestionó los costos de la contratación formal y planteó un esquema de menores beneficios para jóvenes.</p>
+                        <p class="card-resumen">El ministro de Economía cuestionó la falta de controles sobre los proyectos ejecutados.</p>
                         <span class="card-fecha">26 Nov 2026</span>
                     </div>
                 </a>
                 <a href="tecnologia.html" class="card-noticia">
-                    <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
+                    <div class="card-imagen" style="background-image: url('images/nvidia-huang-renuncia.jpg');"></div>
                     <div class="card-contenido">
-                        <div class="card-categoria">Ciencia</div>
-                        <h3 class="card-titulo">Una huella de selenio revela cómo la Tierra recicla antiguas placas tectónicas</h3>
-                        <p class="card-resumen">Los científicos encontraron que la corteza reciclada juega un papel crucial en la formación de nuevo fondo oceánico.</p>
+                        <div class="card-categoria">Tecnología</div>
+                        <h3 class="card-titulo">Nvidia enfrenta la renuncia de un alto ejecutivo clave para su expansión</h3>
+                        <p class="card-resumen">La noticia sacude a los mercados tecnológicos a nivel global.</p>
                         <span class="card-fecha">26 Nov 2026</span>
                     </div>
                 </a>
-                <a href="opinion.html" class="card-noticia">
-                    <div class="card-imagen" style="background-image: url('images/noticia-opinion.jpg');"></div>
+                <a href="politica.html" class="card-noticia">
+                    <div class="card-imagen" style="background-image: url('images/noticia-politica.jpg');"></div>
                     <div class="card-contenido">
-                        <div class="card-categoria">Espectáculos</div>
-                        <h3 class="card-titulo">¡Atención 'Esto es guerra'!: 'Combate' prepara su regreso con especial anuncio</h3>
-                        <p class="card-resumen">Combate prepara una presentación especial para revelar detalles de su nueva temporada el 2 de diciembre.</p>
+                        <div class="card-categoria">Política</div>
+                        <h3 class="card-titulo">Presidente de la CCL cuestiona vacaciones y CTS: “Somos el único país en el mundo”</h3>
+                        <p class="card-resumen">Raúl Barrios planteó un esquema de menores beneficios para jóvenes.</p>
+                        <span class="card-fecha">26 Nov 2026</span>
+                    </div>
+                </a>
+                <a href="cultura.html" class="card-noticia">
+                    <div class="card-imagen" style="background-image: url('images/noticia-cultura.jpg');"></div>
+                    <div class="card-contenido">
+                        <div class="card-categoria">Ciencia</div>
+                        <h3 class="card-titulo">Una huella de selenio revela cómo la Tierra recicla antiguas placas tectónicas</h3>
+                        <p class="card-resumen">Los científicos encontraron que la corteza reciclada juega un papel crucial en el fondo oceánico.</p>
                         <span class="card-fecha">26 Nov 2026</span>
                     </div>
                 </a>
@@ -299,84 +210,51 @@
                     <div class="card-contenido">
                         <div class="card-categoria">Espectáculos</div>
                         <h3 class="card-titulo">Milett Figueroa rompe en llanto al revelar si se sintió usada por Marcelo Tinelli</h3>
-                        <p class="card-resumen">La actriz no pudo evitar las lágrimas en un podcast al hablar sobre el fin de su relación con el conductor argentino.</p>
+                        <p class="card-resumen">La actriz no pudo evitar las lágrimas en un podcast al hablar sobre su relación.</p>
                         <span class="card-fecha">26 Nov 2026</span>
                     </div>
                 </a>
-                <a href="politica.html" class="card-noticia">
-                    <div class="card-imagen" style="background-image: url('images/noticia-politica.jpg');"></div>
+                <a href="tecnologia.html" class="card-noticia">
+                    <div class="card-imagen" style="background-image: url('images/noticia-tecnologia.jpg');"></div>
                     <div class="card-contenido">
-                        <div class="card-categoria">Mundo</div>
-                        <h3 class="card-titulo">Mujer que ha vivido 35 años en EE.UU. fue detenida por el ICE: Solo estaba realizando esta acción</h3>
-                        <p class="card-resumen">La mujer se encuentra en el Centro de Procesamiento de ICE en Adelanto, mientras el DHS no revela el motivo.</p>
+                        <div class="card-categoria">Ciencia</div>
+                        <h3 class="card-titulo">Hallan una estrella que gira 261 veces por segundo y revela una nueva forma de explorar el universo</h3>
+                        <p class="card-resumen">Este hallazgo promete agilizar la detección de sistemas binarios en rayos gamma.</p>
                         <span class="card-fecha">26 Nov 2026</span>
                     </div>
                 </a>
             </div>
         </div>
-
         <!-- BOTÓN PARA CARGAR / VER MENOS NOTICIAS -->
         <div style="text-align: center; margin-top: 30px; margin-bottom: 50px;">
             <button id="btnCargarMas" style="background-color: var(--rojo); color: white; border: none; padding: 15px 30px; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: background-color 0.3s;">
                 Cargar más noticias
             </button>
         </div>
-
-        <!-- ==========================================
-             SECCIÓN QUIÉNES SOMOS (VISIÓN, MISIÓN, UBICACIÓN)
-             ========================================== -->
-        <section id="quienes-somos" style="margin-top: 60px; margin-bottom: 60px; padding: 50px; background-color: var(--blanco); border: 1px solid var(--borde); border-top: 5px solid var(--rojo); text-align: center;">
-            
-            <h2 style="font-family: var(--fuente-titulo); font-size: 2.5rem; color: var(--negro); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px;">
-                ¿Quiénes Somos?
-            </h2>
-            <p style="font-size: 1rem; color: var(--gris-medio); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+        <!-- SECCIÓN QUIÉNES SOMOS -->
+        <section class="quienes-somos-section">
+            <h2>¿Quiénes Somos?</h2>
+            <p class="descripcion">
                 En <strong>Verdad al Día</strong> somos un equipo de periodistas comprometidos con la excelencia informativa, la ética profesional y la búsqueda incansable de la verdad. Desde 1998, trabajamos para llevar a nuestros lectores noticias actuales, análisis profundos y una visión objetiva de la realidad nacional e internacional.
             </p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left;">
-                
-                <!-- Misión -->
-                <div style="background-color: var(--beige); padding: 30px; border: 1px solid var(--borde);">
-                    <h3 style="font-family: var(--fuente-titulo); font-size: 1.4rem; color: var(--rojo); margin-bottom: 15px; text-transform: uppercase;">
-                        Nuestra Misión
-                    </h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--gris-oscuro);">
-                        Informar con veracidad, oportunidad y responsabilidad social, proporcionando a la ciudadanía contenido periodístico de alta calidad que fomente el pensamiento crítico, el debate democrático y la construcción de una sociedad más informada y justa.
-                    </p>
+            <div class="qs-grid">
+                <div class="qs-card">
+                    <h3>Nuestra Misión</h3>
+                    <p>Informar con veracidad, oportunidad y responsabilidad social, proporcionando a la ciudadanía contenido periodístico de alta calidad que fomente el pensamiento crítico, el debate democrático y la construcción de una sociedad más informada y justa.</p>
                 </div>
-
-                <!-- Visión -->
-                <div style="background-color: var(--beige); padding: 30px; border: 1px solid var(--borde);">
-                    <h3 style="font-family: var(--fuente-titulo); font-size: 1.4rem; color: var(--rojo); margin-bottom: 15px; text-transform: uppercase;">
-                        Nuestra Visión
-                    </h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--gris-oscuro);">
-                        Consolidarnos como el medio de comunicación digital de referencia en el norte del país y a nivel nacional para el año 2030, siendo reconocidos por nuestra independencia editorial, rigor periodístico y capacidad de adaptación a las nuevas plataformas tecnológicas.
-                    </p>
+                <div class="qs-card">
+                    <h3>Nuestra Visión</h3>
+                    <p>Consolidarnos como el medio de comunicación digital de referencia en el norte del país y a nivel nacional para el año 2030, siendo reconocidos por nuestra independencia editorial, rigor periodístico y capacidad de adaptación a las nuevas plataformas tecnológicas.</p>
                 </div>
-
-                <!-- Ubicación -->
-                <div style="background-color: var(--beige); padding: 30px; border: 1px solid var(--borde);">
-                    <h3 style="font-family: var(--fuente-titulo); font-size: 1.4rem; color: var(--rojo); margin-bottom: 15px; text-transform: uppercase;">
-                        Nuestra Ubicación
-                    </h3>
-                    <p style="font-size: 0.95rem; line-height: 1.7; color: var(--gris-oscuro); margin-bottom: 10px;">
-                        Nuestras oficinas centrales se encuentran ubicadas en:
-                    </p>
-                    <p style="font-size: 1rem; font-weight: bold; color: var(--negro);">
-                        📍 Chiclayo, Lambayeque - Perú
-                    </p>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--gris-medio); margin-top: 10px;">
-                        Desde el corazón del norte peruano, cubrimos las noticias que importan a nuestra comunidad y al mundo entero.
-                    </p>
+                <div class="qs-card">
+                    <h3>Nuestra Ubicación</h3>
+                    <p>Nuestras oficinas centrales se encuentran ubicadas en:</p>
+                    <p><strong>📍 Chiclayo, Lambayeque - Perú</strong></p>
+                    <p style="font-size: 0.85rem; margin-top: 10px; color: var(--gris-medio);">Desde el corazón del norte peruano, cubrimos las noticias que importan a nuestra comunidad y al mundo entero.</p>
                 </div>
-
             </div>
         </section>
-
     </div>
-
     <!-- MODAL DE SUSCRIPCIÓN -->
     <div id="modalSuscripcion" class="modal">
         <div class="modal-contenido">
@@ -390,30 +268,19 @@
             </form>
         </div>
     </div>
-
     <!-- FOOTER -->
     <footer class="footer">
         <p>&copy; 2026 Verdad al Día. Todos los derechos reservados.</p>
-<<<<<<< HEAD
         <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
         
-=======
-       <p><a href="nosotros.html">Nosotros</a> | <a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
-
->>>>>>> ce8823211d9d5a5afa7fb9beb515deada8dbe94e
         <button id="btnCerrarSesion" style="display: none; margin-top: 15px; background-color: var(--gris-oscuro); color: white; border: none; padding: 6px 15px; font-size: 0.7rem; cursor: pointer; letter-spacing: 1px; text-transform: uppercase;">
             Cerrar Sesión
         </button>
     </footer>
-
-    <!-- SCRIPT JS PRINCIPAL -->
     <script src="js/script.js"></script>
-
-    <!-- SCRIPT EXTRA PARA CERRAR SESIÓN, CARRUSEL Y CARGAR MÁS -->
     <script>
+        // Lógica para Cerrar Sesión y Carrusel (unificado)
         document.addEventListener("DOMContentLoaded", function() {
-            
-            // --- 1. Lógica para cerrar sesión ---
             const btnCerrar = document.getElementById('btnCerrarSesion');
             const userLogueado = localStorage.getItem('usuario_logueado');
             if (userLogueado && btnCerrar) {
@@ -424,63 +291,20 @@
                     window.location.reload();
                 });
             }
-
-            // --- 2. Lógica del Carrusel de Noticias ---
-            const slides = document.querySelectorAll('.hero');
-            const btnPrev = document.getElementById('prevBtn');
-            const btnNext = document.getElementById('nextBtn');
-            let currentSlide = 0;
-            let autoPlayInterval;
-
-            function showSlide(index) {
-                slides.forEach(slide => slide.classList.remove('activo'));
-                if (index >= slides.length) currentSlide = 0;
-                else if (index < 0) currentSlide = slides.length - 1;
-                else currentSlide = index;
-                slides[currentSlide].classList.add('activo');
-            }
-
-            btnNext.addEventListener('click', () => {
-                showSlide(currentSlide + 1);
-                resetAutoPlay();
-            });
-
-            btnPrev.addEventListener('click', () => {
-                showSlide(currentSlide - 1);
-                resetAutoPlay();
-            });
-
-            function startAutoPlay() {
-                autoPlayInterval = setInterval(() => {
-                    showSlide(currentSlide + 1);
-                }, 5000);
-            }
-
-            function resetAutoPlay() {
-                clearInterval(autoPlayInterval);
-                startAutoPlay();
-            }
-
-            startAutoPlay();
-
-            // --- 3. Lógica para el botón "Cargar Más / Ver Menos Noticias" ---
+            // Botón Cargar Más / Ver Menos
             const btnCargarMas = document.getElementById('btnCargarMas');
             const noticiasOcultas = document.getElementById('noticias-ocultas');
             let noticiasVisibles = false;
-
             if (btnCargarMas && noticiasOcultas) {
                 btnCargarMas.addEventListener('click', function() {
                     if (!noticiasVisibles) {
-                        // Mostrar noticias
                         noticiasOcultas.style.display = 'block';
                         btnCargarMas.textContent = 'Ver menos noticias';
                         noticiasVisibles = true;
                     } else {
-                        // Ocultar noticias
                         noticiasOcultas.style.display = 'none';
                         btnCargarMas.textContent = 'Cargar más noticias';
                         noticiasVisibles = false;
-                        // Opcional: Hacer scroll hacia arriba para que no se pierda el usuario
                         document.getElementById('noticias-ocultas').scrollIntoView({ behavior: 'smooth' });
                     }
                 });
